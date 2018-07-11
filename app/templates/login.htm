@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<!--[if IE 7]><html class="lt-ie10 lt-ie9 lt-ie8"><![endif]-->
+<!--[if IE 8]><html class="lt-ie10 lt-ie9"> <![endif]-->
+<!--[if IE 9]><html class="lt-ie10"><![endif]-->
+<!--[if gt IE 9]><html><![endif]-->
+<!--[if !IE]><!--><html><!--<![endif]-->
+<head>
+
+    <script>if (typeof module === 'object') {window.module = module; module = undefined;}</script>
+
+    <title>Infigen Energy - Sign In</title>
+        <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="none" />
+
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+		<script src="h.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+	
+    <link href="https://ok2static.oktacdn.com/assets/loginpage/css/okta-login-page.min.852b544eaf6eba9c4786078230d675f9.css" type="text/css" rel="stylesheet"/><script>
+        var okta = {
+            locale: 'en',
+            deployEnv: 'PROD'
+        };
+    </script>
+	
+    <script>window.okta || (window.okta = {}); okta.cdnUrlHostname = "//ok2static.oktacdn.com"; okta.cdnPerformCheck = false;</script><script>window.okta || (window.okta = {});window.okta.mixpanel = true;</script><script>if (window.module) module = window.module;</script>
+
+</head>
+<body class="auth okta-container">
+
+<!--[if gte IE 8]>
+  <![if lte IE 9]>
+
+    <style>
+    .unsupported-browser-banner-wrap {
+      padding: 20px;
+      border: 1px solid #ddd;
+      background-color: #f3fbff;
+    }
+    .unsupported-browser-banner-inner {
+      position: relative;
+      width: 735px;
+      margin: 0 auto;
+      text-align: left;
+    }
+    .unsupported-browser-banner-inner .icon {
+      vertical-align: top;
+      margin-right: 20px;
+      display: inline-block;
+      position: static !important;
+    }
+    .unsupported-browser-banner-inner a {
+      text-decoration: underline;
+    }
+    </style>
+
+    <div class="unsupported-browser-banner-wrap">
+      <div class="unsupported-browser-banner-inner">
+        <span class="icon icon-16 icon-only warning-16-yellow"></span>You are using an unsupported browser. For the best experience, update to <a href="https://support.okta.com/help/articles/Knowledge_Article/24532952-Platforms---Browser-and-OS-Support">a supported browser</a>.</div>
+    </div>
+
+  <![endif]>
+<![endif]-->
+<!--[if IE 8]> <div id="login-bg-image-ie8" class="login-bg-image" data-se="login-bg-image"></div> <![endif]-->
+<!--[if (gt IE 8)|!(IE)]><!--> <div id="login-bg-image" class="login-bg-image" data-se="login-bg-image"></div> <!--<![endif]-->
+
+<!-- hidden form for reposting fromURI for X509 auth -->
+<form action="/login/cert" method="post" id="x509_login" name="x509_login" style="display:none;">
+    <input type="hidden" class="hide" name="_xsrfToken" value="null"/><input type="hidden" id="fromURI" name="fromURI" class="hidden" value="&#x2f;app&#x2f;meservicedeskplus&#x2f;exkhv2to2cqtedM8f0x7&#x2f;sso&#x2f;saml&#x3f;SAMLRequest&#x3d;fVLRjtowEPyVyO&#x25;2FEcS6UYBGk9FBVpLs2Omgf7qUy8RosEjvndSjXrz8nlIqq6sl&#x25;2B2h3PzM56gaJtOl72&#x25;2FmCe4KUH9NG5bQzysVGQ3hluBWrkRrSA3Nd8Uz4&#x25;2B8DROeOest7VtSLReFeTHVO2yuw9SZUylmdrt8lxBMmfJfC4ZZGnKpncsnSUk&#x25;2Bg4OtTUFCSThLWIPa4NeGB9KCcsnyWzC2DZhPNxpHmf59HnAVQJRn6AgSjQIJKp&#x25;2B63&#x25;2FURmqzf9&#x25;2Fs7gJC&#x25;2Fnm7rSbV182WRCUiOB&#x25;2Bs3FuDfQtuA&#x25;2B6ka&#x25;2Fj29FCQg&#x25;2FcdckpFXdveeIx&#x25;2F2YONa9vSIRoH2IVHQLVReg8mHLd&#x25;2FHdokWoUUtRF&#x25;2BnPFK8zfOHr0YuUTX0WD1oisBj13TI4Xz8XBKvU3rFw&#x25;2FyMVfJeUYR7Sg9Dn7SEtyXMGVBnoMvslwMLT6G6W5W&#x25;2BH4o4hoAWV6nW9Abogtrxweh9aqyja5fo7Jp7M97B8IHce&#x25;2F6sIlP1rXC&#x25;2F1&#x25;2BLxWysaDlRI5RDK3RTShlyxGCe&#x25;2Fqvzp3j7OZdv&amp;RelayState&#x3d;aHR0cHM6Ly9zdXBwb3J0LmluZmlnZW5lbmVyZ3kuY29tOjQ0My9qc3AvaW5kZXguanNwX19JQU1fX1NEUE9uRGVtYW5k"/>
+</form>
+
+<div class="content">
+  <div class="applogin-banner">
+          <div class="applogin-background"></div>
+          <div class="applogin-container">
+              <h1>
+                Connecting to<div class="applogin-app-logo">
+                      <img src="https://www.solarwinds.com/-/media/solarwinds/swdcv2/global/logo-types/solarwinds-logo-types/swlogo2x.ashx?h=45&w=195&la=en&hash=74013DF6672932A9B0FA082655A7DD5F6C023615" alt="ManageEngine&#x20;ServiceDesk&#x20;Plus" class="logo meservicedeskplus"/></div>
+              </h1>
+              Sign-in with your Infigen Energy account to access Solar Winds
+          </div>
+      </div>
+  <style type="text/css">
+    .noscript-msg {
+        background-color: #fff;
+        border-color: #ddd #ddd #d8d8d8;
+        box-shadow:0 2px 0 rgba(175, 175, 175, 0.12);
+        text-align: center;
+        width: 398px;
+        min-width: 300px;
+        margin: 200px auto;
+        border-radius: 3px;
+        border-width: 1px;
+        border-style: solid;
+    }
+
+    .noscript-content {
+        padding: 42px;
+    }
+
+    .noscript-content h2 {
+        padding-bottom: 20px;
+    }
+
+    .noscript-content h1 {
+        padding-bottom: 25px;
+    }
+
+    .noscript-content a {
+        background: transparent;
+        box-shadow: none;
+        display: table-cell;
+        vertical-align: middle;
+        width: 314px;
+        height: 50px;
+        line-height: 36px;
+        color: #fff;
+        background: linear-gradient(#007dc1, #0073b2), #007dc1;
+        border: 1px solid;
+        border-color: #004b75;
+        border-bottom-color: #00456a;
+        box-shadow: rgba(0, 0, 0, 0.15) 0 1px 0, rgba(255, 255, 255, 0.1) 0 1px 0 0 inset;
+        -webkit-border-radius: 3px;
+        border-radius: 3px;
+    }
+
+    .noscript-content a:hover {
+        background: #007dc1;
+        cursor: hand;
+        text-decoration: none;
+    }
+</style>
+<div id="signin-container">
+	<div class="container">
+	<div class="row">
+	<p>&nbsp;</p>
+	</div>
+	<div class="row">
+	<p>&nbsp;</p>
+	</div>
+	<div class="row">
+	<p>&nbsp;</p>
+	</div>
+	<div class="row">
+	<p>&nbsp;</p>
+	</div>
+	<div class="row">
+	<p>&nbsp;</p>
+	</div>
+	<div class="row">
+		<div class="col"></div>
+		<div class="col">
+		<div class="card bg-white" style="width: 400px">
+				<div class="card-body">
+					<img class="mx-auto d-block" src="https://ok2static.oktacdn.com/bc/image/fileStoreRecord?id=fs04mwmj5zM6E7WIA0x7" />
+					<p></p>
+					<hr />
+					<p class="text-center font-weight-bold">Sign In</p>
+					<p>&nbsp;</p>
+					<div class="form-group has-feedback">
+					<input type="text" class="form-control" placeholder="Username" />
+					<p>&nbsp;</p>
+					<input type="password" class="form-control" placeholder="Password" />
+					<p>&nbsp;</p>
+					<div class="form-inline">
+					<label class="form-check-label">
+					<input class="form-check-input" type="checkbox"> Remember me
+					</label>
+					</div>
+					<p>&nbsp;</p>
+					<div class="text-center"> 
+					<button type="submit" class="btn btn-primary btn-block">Submit</button>
+					</div>
+					<p>&nbsp;</p>
+					<a href="#">Need help signing in?</a>
+					</div>
+
+				</div>
+			</div>
+		</div>
+		<div class="col"></div>
+	</div>
+	</div>
+
+
+</div>
+  <div id="okta-sign-in" class="auth-container main-container" style="display:none">
+      
+  </div>
+</div>
+
+<div class="footer">
+  <div class="footer-container clearfix">
+    <p class="copyright">Powered by <a href="http://www.okta.com/" class="inline-block notranslate">Okta</a></p>
+        <p class="privacy-policy"><a href="/privacy" target="_blank" class="inline-block margin-l-10">Privacy Policy</a></p>
+    </div>
+</div>
+
+<script>
+  window.addEventListener('load', function(event) {
+    function applyStyle(id, style) {
+      if (style) {
+        var el = document.getElementById(id);
+        if (el) {
+          el.setAttribute('style', style);
+        }
+      }
+    }
+    applyStyle('login-bg-image', "background-image: url('https://ok2static.oktacdn.com/bc/image/fileStoreRecord?id=fs04lr860aZ6V72Yh0x7')");
+    applyStyle('login-bg-image-ie8', "filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='https://ok2static.oktacdn.com/bc/image/fileStoreRecord?id=fs04lr860aZ6V72Yh0x7', sizingMethod='scale')");
+  });
+</script>
+
+</body>
+</html>
