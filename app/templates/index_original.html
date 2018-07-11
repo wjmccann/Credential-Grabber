@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title> - OPS Case Management System</title>
+
+    
+    
+        <link rel="stylesheet" href="https://portal.coringroup.com/lib/kendo-ui/styles/kendo.common.min.css?v=1310" />
+        <link rel="stylesheet" href="https://portal.coringroup.com/lib/kendo-ui/styles/kendo.metro.min.css?v=1310" />
+        <link href="https://portal.coringroup.com/lib/kendo-ui/styles/kendo.mobile.all.min.css?v=1310" rel="stylesheet" />
+        <link rel="stylesheet" href="https://portal.coringroup.com/css/app.min.css?v=1310" />
+    
+
+</head>
+<body>
+    
+    
+        <script src="https://ajax.aspnetcdn.com/ajax/jquery/jquery-2.2.0.min.js">
+        </script>
+<script>(window.jQuery||document.write("\u003Cscript src=\u0022\/lib\/jquery\/dist\/jquery.min.js\u0022\u003E\u003C\/script\u003E"));</script>
+        <script src="https://portal.coringroup.com/lib/kendo-ui/js/kendo.all.min.js?v=1310"></script>
+        <script src="https://portal.coringroup.com/lib/kendo-ui/js/kendo.aspnetmvc.min.js?v=1310"></script>
+    
+
+    <a href="index.html#MainContent" class="skip-link show-for-sr">skip to content</a>
+    <header role="banner" class="site-header">
+        <div class="title-bar" id="TitleBar" data-hide-for="large" data-responsive-toggle="MainMenu">
+            <!-- -->
+            <div>
+                <a href="https://portal.coringroup.com/Home/Index">
+                    <img class="logo" src="https://portal.coringroup.com/images/OPS-Logo-White.svg" alt="OPS Optimal Postioning System" />
+                </a>
+            </div>
+            <div class="hamburger-holder">
+                <span id="MenuLabel" data-toggler=".hide" class="hamburger-label" data-animate="fade-in fade-out ">Menu</span>
+                <span id="CloseLabel" data-toggler=".hide" class="hamburger-label" data-animate="hinge-in-from-top hinge-out-from-bottom " style="display: none;">Close</span>
+                <button class="hamburger hamburger--collapse" type="button" data-toggle="MainMenu Hamburger MenuLabel CloseLabel" data-toggler=".is-active" id="Hamburger">
+                    <span class="hamburger-box">
+                        <span class="hamburger-inner"></span>
+                    </span>
+                </button>
+            </div>
+        </div>
+        <nav class="top-bar" id="MainMenu">
+            <div class="top-bar-title show-for-large">
+                <a href="https://portal.coringroup.com/Home/Index">
+                    <img class="logo" src="https://portal.coringroup.com/images/OPS-Logo-White.svg" alt="OPS Optimal Postioning System" /> Corin Australia Portal
+                </a>
+            </div>
+            
+
+
+
+
+        </nav>
+    </header>
+
+    <div class="container body-content">
+
+        <script src="https://portal.coringroup.com/js/Common/Common.js?v=1310"></script>
+
+<script>  
+    function getLocation() {
+        if (typeof (Storage) !== "undefined" && !sessionStorage["UserLocation"] && navigator.geolocation) {
+            navigator.geolocation.getCurrentPosition(saveGeoPosition);
+        }
+    }
+
+    function saveGeoPosition(position) {
+        $("#UserLocation").val(position.coords.latitude + "," + position.coords.longitude + "," + position.timestamp);
+    }
+        $(document).ready(function () {
+            if (typeof (Storage) !== "undefined") {
+                sessionStorage.clear();
+            }
+            getLocation();
+        });
+
+</script>
+
+<div class="row mainContent loginPageCeramic">
+        <div class="small-12 medium-6 medium-centered large-4 columns loginHolder">
+            <section>
+                <form method="post" action="index.html">
+                    <input hidden="hidden" type="text" id="BackgroundImageCss" name="BackgroundImageCss" value="loginPageCeramic" />
+                    <input hidden="hidden" id="UserLocation" name="UserLocation" />
+                     <h1 class="text-center">Sign In</h1>
+                    <div class="form-error validation-summary-valid" data-valmsg-summary="true"> <ul><li style="display:none"></li>
+</ul></div>
+                    <div class="text field">
+                        <input type="text" placeholder="Placeholder Text" aria-describedby="exampleHelpText" data-val="true" data-val-required="The Username field is required." id="Email" name="Email" value="" />
+                        <label class="required-field input-label-content" for="Email">Username</label>
+                        <p class="help-text">
+                            <span class="form-error field-validation-valid field-validation-valid" data-valmsg-for="Email" data-valmsg-replace="true"></span>
+                            <span id="exampleHelpText"></span>
+                        </p>
+                    </div>
+                    <div class="text field">
+                        <input type="password" data-val="true" data-val-required="The Password field is required." id="Password" name="Password" />
+                        <label class="required-field input-label-content" for="Password">Password</label>
+                        <p class="help-text">
+                            <span class="form-error field-validation-valid field-validation-valid" data-valmsg-for="Password" data-valmsg-replace="true"></span>
+                            <span id="exampleHelpText"></span>
+                        </p>
+                    </div>
+
+                    <div class="actions text-center">
+
+                        <button type="submit" class="btn btn-default">Log in</button>
+
+                    </div>
+                    <div class="text-center">
+                        <a class="forgotPassowrd" href="https://portal.coringroup.com/Account/ForgotPassword">Forgot your password?</a>
+                    </div>
+                <input name="__RequestVerificationToken" type="hidden" value="CfDJ8N8Fm3ZDNJ9IkQOafOYAJV2ruVGAobmcE_fcFXuO4j_NkRbHZ4NBY60udtLmJHMPzeHn5_9E5FPACUjT2X0_pfGH7OHBkUNCX4n3l8YDDtIPIIhIR7b_OJazGe8qaHpo23_LH82bvdK5_xr5kZKLLY0" /></form>
+            </section>
+        </div>
+    </div>
+
+
+
+        <hr />
+        <footer>
+            <p>&copy; 2018 Corin all rights reserved</p>
+        </footer>
+    </div>
+
+    
+    
+        <script src="https://portal.coringroup.com/js/site.min.js?v=1310"></script>
+        <script src="https://portal.coringroup.com/lib/kendo-ui/js/kendo.all.min.js?v=1310"></script>
+        <script src="https://portal.coringroup.com/lib/kendo-ui/js/kendo.aspnetmvc.min.js?v=1310"></script>
+    
+
+    
+
+
+    <script src="https://ajax.aspnetcdn.com/ajax/jquery.validate/1.14.0/jquery.validate.min.js">
+    </script>
+<script>(window.jQuery && window.jQuery.validator||document.write("\u003Cscript src=\u0022\/lib\/jquery-validation\/dist\/jquery.validate.min.js\u0022\u003E\u003C\/script\u003E"));</script>
+    <script src="https://ajax.aspnetcdn.com/ajax/mvc/5.1/jquery.validate.unobtrusive.min.js">
+    </script>
+<script>(window.jQuery && window.jQuery.validator && window.jQuery.validator.unobtrusive||document.write("\u003Cscript src=\u0022\/lib\/jquery-validation-unobtrusive\/jquery.validate.unobtrusive.min.js\u0022\u003E\u003C\/script\u003E"));</script>
+
+
+
+</body>
+
+</html>
